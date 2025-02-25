@@ -7,13 +7,13 @@ import org.springframework.ui.Model;
 
 @Controller
 public class HelloWorldController {
-    @GetMapping("/")
+    @GetMapping("/web")
     @ResponseBody
     public String hello() {
         return "Hello from BridgeLabz!(UC1)";
     }
 
-    @GetMapping("/web")
+    @GetMapping("/web/message")
     @ResponseBody
     public String message(Model model){
     model.addAttribute("message");
